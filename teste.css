@@ -1,0 +1,122 @@
+/* Fonte Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #0D1B2A; /* azul noite escuro */
+  color: #E0E0E0; /* texto claro */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* TOPO FIXO amarelo translúcido */
+.top-bar {
+  background-color: rgba(199, 182, 0, 0.5); /* #C7B600 50% */
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  z-index: 20;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1.5rem;
+  box-sizing: border-box;
+}
+
+/* RODAPÉ FIXO amarelo sólido */
+.bottom-bar {
+  background-color: #C7B600;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  z-index: 20;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  box-sizing: border-box;
+}
+
+/* Container principal do conteúdo */
+.container {
+  flex: 1; /* preenche o espaço entre topo e rodapé */
+  padding: 80px 20px 80px; /* compensar topo e rodapé fixos */
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Título */
+.container h1 {
+  margin-bottom: 1rem;
+  color: #C7B600; /* amarelo da marca */
+  font-weight: 700;
+}
+
+/* Texto para digitar */
+#text-to-type {
+  background-color: rgba(58, 90, 64, 0.7); /* verde escuro translúcido */
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  font-size: 1.25rem;
+  user-select: none;
+}
+
+/* Área de digitação */
+#input-field {
+  width: 100%;
+  height: 120px;
+  padding: 1rem;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  resize: none;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Feedback */
+#feedback {
+  margin-top: 1rem;
+  font-weight: 600;
+  color: #3A5A40; /* verde escuro */
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.1rem;
+}
+
+/* Links e botões (caso precise no futuro) */
+a {
+  color: #3A5A40;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+button, .btn {
+  background-color: #C7B600;
+  color: #3A5A40;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+button:hover, .btn:hover {
+  background-color: #a19500;
+}

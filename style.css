@@ -1,0 +1,125 @@
+/* Reset e base */
+body, html {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    position: relative;
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+  }
+  
+  /* Faixas douradas */
+.top-bar {
+  background-color: rgba(199, 182, 0, 0.5); /* #C7B600 com 50% de opacidade */
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  z-index: 20;
+}
+
+.bottom-bar {
+  background-color: rgba(199, 182, 0, 0.75); /* #C7B600 com 50% de opacidade */
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  z-index: 1;
+}
+
+  
+  /* Espaço extra no conteúdo para evitar sobreposição do header/footer */
+  .form-wrapper {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    min-height: 100vh;
+    background-image: url("img/estrela.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-attachment: fixed;
+  }
+  
+  /* Logo no topo */
+  .logo-top {
+    width: 100px;
+  }
+  
+  /* Formulário */
+  .form-container {
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 10px;
+    max-width: 500px;
+    width: 100%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    z-index: 5;
+  }
+  
+  /* Árvores */
+  .arvores {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    pointer-events: none;
+    z-index: 10;
+  }
+  
+  .arvore {
+    position: absolute;
+    width: 120px;
+    height: auto;
+  }
+  
+  .arvore.esquerda {
+    left: 0;
+    bottom: 0;
+  }
+  
+  .arvore.centro {
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+  }
+  
+  .arvore.direita {
+    right: 0;
+    bottom: 0;
+  }
+  body {
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  /* Estilo dos links de autenticação */
+  .auth-links a,
+  .bottom-bar a {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400; /* Regular */
+    color: #3A5A40 !important;
+    text-decoration: none;
+    transition: 0.2s ease;
+  }
+  
+  .auth-links a:hover,
+  .bottom-bar a:hover {
+    opacity: 0.8;
+  }
+
+  .form-container a,
+.bottom-bar a,
+.auth-links a {
+  color: #3A5A40 !important;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.form-container a:hover,
+.bottom-bar a:hover,
+.auth-links a:hover {
+  color: #2a3f2b; /* tom um pouco mais escuro no hover */
+  text-decoration: underline;
+}

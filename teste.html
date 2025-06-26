@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício de Digitação</title>
+    <link rel="stylesheet" href="teste.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Exercício de Digitação</h1>
+        <p id="text-to-type">Aqui aparece o texto para digitar.</p>
+        <textarea id="input-field" placeholder="Comece a digitar aqui..." oninput="checkInput()"></textarea>
+        <div id="feedback">
+            <p>Velocidade: <span id="speed">0</span> WPM</p>
+            <p>Precisão: <span id="accuracy">100%</span></p>
+        </div>
+    </div>
+
+    <script src="teste.js"></script>
+</body>
+</html>
