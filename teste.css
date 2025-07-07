@@ -12,6 +12,15 @@ body, html {
   min-height: 100vh;
 }
 
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+h1 {
+  font-size: 2.5vw;
+}
+
 /* TOPO FIXO amarelo translúcido */
 .top-bar {
   background-color: rgba(199, 182, 0, 0.5); /* #C7B600 50% */

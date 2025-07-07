@@ -19,6 +19,15 @@ body, html {
   z-index: 20;
 }
 
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+h1 {
+  font-size: 2.5vw;
+}
+
 .bottom-bar {
   background-color: rgba(199, 182, 0, 0.75); /* #C7B600 com 50% de opacidade */
   position: fixed;
@@ -122,4 +131,8 @@ body, html {
 .auth-links a:hover {
   color: #2a3f2b; /* tom um pouco mais escuro no hover */
   text-decoration: underline;
+}
+
+h1 {
+  font-size: clamp(1.5rem, 5vw, 3rem);
 }
