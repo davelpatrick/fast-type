@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <title>Painel do Administrador</title>
+  <style>
+    table {
+      width: 80%;
+      margin: auto;
+      border-collapse: collapse;
+    }
+    th, td {
+      padding: 10px;
+      border: 1px solid #333;
+      text-align: left;
+    }
+    th {
+      background-color: #f2f2f2;
+    }
+    .center {
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <h1 class="center">Painel de Administração</h1>
+  <table id="tabelaUsuarios">
+    <thead>
+      <tr>
+        <th>Email</th>
+        <th>Usuário</th>
+        <th>Senha</th>
+        <th>Ação</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Conteúdo preenchido via JS -->
+    </tbody>
+  </table>
+  <div class="center">
+    <button onclick="sair()">Sair</button>
+  </div>
+
+  <script src="admin.js"></script>
+</body>
+</html>

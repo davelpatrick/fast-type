@@ -120,3 +120,49 @@ button, .btn {
 button:hover, .btn:hover {
   background-color: #a19500;
 }
+
+.form-wrapper {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    min-height: 100vh;
+    background-image: url("img/estrela.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-attachment: fixed;
+  }
+
+  /* Árvores */
+  .arvores {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    pointer-events: none;
+    z-index: 10;
+  }
+  
+  .arvore {
+    position: absolute;
+    width: 120px;
+    height: auto;
+  }
+  
+  .arvore.esquerda {
+    left: 0;
+    bottom: 0;
+  }
+  
+  .arvore.centro {
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+  }
+  
+  .arvore.direita {
+    right: 0;
+    bottom: 0;
+  }
+  body {
+    font-family: 'Poppins', sans-serif;
+  }

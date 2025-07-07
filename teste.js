@@ -51,6 +51,24 @@ function checkInput() {
 
     // Atualiza feedback de precisão e velocidade
     updateFeedback();
+
+    // Se o texto foi digitado corretamente por completo
+    if (typedText === textToType) {
+        const elapsedTime = (new Date() - startTime) / 1000; // segundos
+        const wordsPerMinute = Math.round((totalCharacters / 5) / (elapsedTime / 60));
+        const accuracy = (correctCharacters / totalCharacters) * 100 || 100;
+
+        // Salva os resultados no localStorage
+        localStorage.setItem('resultadosDigitacao', JSON.stringify({
+            wpm: wordsPerMinute,
+            precisao: accuracy.toFixed(2)
+        }));
+
+        // Redireciona após 1 segundo
+        setTimeout(() => {
+            window.location.href = 'area-usuario.html';
+        }, 1000);
+    }
 }
 
 // Função para calcular e exibir velocidade e precisão
